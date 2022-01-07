@@ -1,12 +1,10 @@
 {
-  "name": "listings-service",
+  "name": "api-gateway",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch": "babel-watch -L src/index.js",
-    "db:migrate": "sequelize db:migrate",
-    "db:migrate:undo": "sequelize db:migrate:undo"
+    "watch": "babel-watch -L src/index.js"
   },
   "devDependencies": {
     "babel-watch": "^7.7.0"
@@ -15,12 +13,12 @@
     "@babel/core": "^7.16.7",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.16.7",
+    "apollo-server": "^3.6.1",
+    "apollo-server-express": "^3.6.1",
     "babel-plugin-module-resolver": "^4.1.0",
-    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "express": "^4.17.2",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.12.5",
-    "sequelize-cli": "^6.3.0"
+    "graphql": "^16.2.0"
   }
 }
